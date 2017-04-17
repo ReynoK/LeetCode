@@ -8,6 +8,9 @@ class Solution(object):
         :type nums: List[int]
         :type target: int
         :rtype: List[int]
+
+        O(n)方法，只需遍历一次列表，利用hash表存值和对应的index，利用两个值和为target，
+        可以同时获取两者的值，在通过值来获取两个所对应的index。
         """
         hash_table = dict()
         for index,num in enumerate(nums):
